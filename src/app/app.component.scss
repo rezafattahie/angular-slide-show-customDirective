@@ -1,0 +1,53 @@
+.slide-show {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide-show__image {
+    width: 100%;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+
+    fa-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ff818173;
+        ;
+        font-size: 3rem;
+        height: 15rem;
+        width: 4rem;
+        margin: 0 -4rem;
+        z-index: 999;
+        background-color: #ffffff2f;
+
+        &:hover {
+            color: #ff8181c0;
+            background-color: #ffffff3d;
+        }
+    }
+
+    span {
+        color: #00000052;
+        font-size: 8rem;
+        z-index: 9999;
+        position: absolute;
+    }
+
+}
+
+.play-control {
+    border-radius: 50% 50% 0 0;
+    cursor: pointer;
+    width: 6rem;
+    height: 3rem;
+    background-color: #00000078;
+    margin-top: -4rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    z-index: 99999999;
+    padding-top: 1rem;
+}

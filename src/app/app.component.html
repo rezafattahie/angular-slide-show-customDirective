@@ -1,0 +1,17 @@
+<div class="slide-show" *appSlideShow="let image from images autoPlay {autoplay:autoplay, duration:3000};
+ let handle = handler; 
+ let imageNo = imageNumber">
+
+  <div class="slide-show__image">
+    <fa-icon [icon]="leftArrow" (click)="handle.preImage()"></fa-icon>
+    <img [src]="image" style="width: 40%; height: 15rem;">
+    <fa-icon [icon]="rightArrow" (click)="handle.nextImage()"></fa-icon>
+    <span>{{imageNo}}</span>
+  </div>
+
+  <div class="play-control">
+    <fa-icon *ngIf="autoplay === ''" [icon]="pause" (click)="autoPlayHandler()"></fa-icon>
+    <fa-icon *ngIf="autoplay === 'NO'" [icon]="play" (click)="autoPlayHandler()"></fa-icon>
+  </div>
+
+</div>
